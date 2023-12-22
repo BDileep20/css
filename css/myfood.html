@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myfood</title>
+    <style>
+        .food{
+        
+        text-align: center;
+        position: sticky;
+        left: 20px;
+        z-index:2;
+       top:0px;
+       padding-bottom:0px;
+       box-sizing: border-box;
+       background-color: aliceblue;
+
+        
+        }
+        .m{
+            position: absolute;
+right: 0px;
+top: 0px;
+            z-index:2;
+            
+        }
+        .img{
+            position: absolute;
+            top: 80px;
+            margin-left: 20px;
+            line-height: 1.5;
+            
+        }
+        #nyc{
+            position: absolute;
+            left: 20px;
+            font-size: 20px;
+            font-family:"karma",sans-serif;
+            line-height: 1.5;
+            
+           
+        }
+        #tell{
+            position: absolute;
+            left:330px;
+            font-size: 20px;
+            font-weight: 300;
+            font-family:"karma",sans-serif;
+            line-height: 1.5;
+        }
+        #che{
+            position: absolute;
+            left:630px;
+            font-size: 20px;
+            font-weight: 400;
+            font-family:"karma",sans-serif;
+            line-height: 1.5;
+        }
+        #on{
+            position: absolute;
+            right:30px;
+            font-size: 20px;
+            font-weight: 400;
+            font-family:"karma",sans-serif;
+            line-height: 1.5; 
+        }
+        #just{
+            position: absolute;
+            top:450px;
+            font-family:"karma",sans-serif; 
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        #lorem{
+            position: absolute;
+            top:470px;
+            left: 310px;
+            font-family:"karma",sans-serif; 
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        #else{
+            position: absolute;
+            top:470px;
+            left: 650px;
+            font-family:"karma",sans-serif; 
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        #ipsum{
+            position: absolute;
+            top:470px;
+            right: 30px;
+            font-family:"karma",sans-serif; 
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        .ice{
+            position: absolute;
+            bottom: -620px;
+            left: 20px;
+        }
+        #gem{
+            font-family:"karma",sans-serif; 
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        #all{
+            font-size: 20px;
+            font-weight: 400;
+            font-family:"karma",sans-serif;
+            line-height: 1.5; 
+        }
+        .salmon{
+            position: absolute;
+            bottom: 0px;
+            left: 340px;
+            top:695px;
+        }
+        .a{
+            position: absolute;
+            bottom: 0px;
+            left: 650px;
+            top:695px;
+        }
+        #the{
+            font-size: 20px;
+            font-weight: 400;
+            font-family:"karma",sans-serif;
+            line-height: 1.5; 
+
+        }
+        #just{
+            
+            font-family:"karma",sans-serif; 
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        .le{
+            position: absolute;
+            bottom: -620px;
+          margin-left: 10px;  
+            right: 0px;
+
+        }
+        #le{
+            font-size: 20px;
+            font-weight: 400;
+            font-family:"karma",sans-serif;
+            line-height: 1.5; 
+        }
+        #he{
+            font-family:"karma",sans-serif; 
+            font-size: 15px;
+            line-height: 1.5;
+      
+        }
+        #dil{
+               position: absolute;
+               top:1200px;
+               left:550px;
+
+        }
+        
+        a:hover{
+            color:orangered;
+            background-color: black;
+            padding: 10px;
+        }
+        #bold{
+           padding-top: 1300px;
+           padding-left: 500px;
+           font-family:"karma",sans-serif; 
+           font-size: 20px;
+        }
+        #hr{
+            position: relative;
+            
+            top: 1250px;
+
+        }
+        #foot{
+         font-family:"karma",sans-serif ;
+         line-height: 1.5;
+         font-size: 15px;
+         display: inline-block;
+         padding-right: 100px;
+        
+
+
+        }
+        #blog{
+         font-family:"karma",sans-serif ;
+         line-height: 1.5;
+         font-size: 15px;
+         position: absolute;
+         top: 2120px;
+         left: 500px;
+        
+
+
+        }
+        .dum{
+            position: absolute;
+         top: 0px;
+         left: 400px;
+        }
+        #duck{
+            position: absolute;
+         top: 50px;
+         left: 50px;
+         padding: 10px;
+        }
+       #back:hover{
+            background-color: rgb(176, 172, 172);
+            padding: 10px;
+        }
+        #like:hover{
+            background-color: rgb(176, 172, 172);
+            padding: 10px;
+        }
+        body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+    </style>
+</head>
+<body>
+    <div class="food" >
+        <h1>My Food</h1>
+        
+        </div>
+        <div id="c1"><h1 class="m">Mail</h1></div>
+     
+    
+    <div class="img">
+<img src="../img/sandwich.jpg" height="380" width="300">
+<img src="../img/steak.jpg" height="380" width="300">
+<img src="../img/cherries.jpg" height="380"width="300">
+<img src="../img/wine.jpg" height="380" width="300">
+<pre id="nyc">The Perfect Sandwich, A 
+  Real NYC Classic</pre>
+<pre id="tell">  Let Me Tell  You About
+        This Steak</pre>
+<pre id="che">  Cherries,interrupted</pre>
+<pre id="on">             Once Again,  Robust Wine
+              and Vegetable Pasta</pre>
+ <pre id="just">          
+Just some random text, lorem ipsum text 
+   praesent tincidunt ipsum lipsum</pre>
+   <pre id="lorem">Once again, some random text to lorem
+ lorem lorem lorem ipsum text praesent 
+     tincidunt ipsum lipsum.</pre>
+     <pre id="else">Lorem ipsum text praesent tincidunt
+         ipsum lipsum.
+
+         What else?</pre>
+         <pre id="ipsum">Lorem ipsum text praesent tincidunt
+             ipsum lipsum.</pre>
+    </div>
+    <div class="ice">
+        <img src="../img/popsicle.jpg" height="350" width="290">
+        <pre id="all">All I Need Is a Popsicle</pre>
+        <pre id="gem">Lorem ipsum text praesent tincidunt 
+            ipsum lipsum.</pre>
+    </div>
+    <div class="salmon">
+        <img src="../img/salmon.jpg" height="350" width="290">
+        <pre id="all">Salmon For Your Skin</pre>
+        <pre id="gem">Once again, some random text to lorem
+ lorem lorem lorem ipsum text praesent 
+            tincidunt ipsum lipsum.</pre>
+    </div>
+    <div class="a">
+        <img src="../img/sandwich (1).jpg" height="350" width="290">
+        <pre id="the">         The Perfect Sandwich, 
+              A Real Classic</pre>
+            <pre id="just">        Just some random text, lorem ipsum text 
+            praesent tincidunt ipsum lipsum.
+            </pre>
+    </div>
+    <div class="le">
+        <img src="../img/croissant.jpg" height="350" width="290" >
+        <pre id="le">         Le French</pre>
+        <pre id="he">   Lorem lorem lorem lorem ipsum text 
+               praesent tincidunt ipsum lipsum.</pre>
+    </div>
+     
+       <pre id="dil">
+    <<  <a href="#c1">1</a>   <a href="#c1">2</a>     <a href="#c1">3</a>    <a href="#c1">4</a> >></pre><hr id="hr">
+    
+    <div id="bold">
+        
+        <b >About Me, The Food Man</b>
+    </div>
+   <center><div>
+        <img src="https://www.w3schools.com/w3images/chef.jpg"><br>
+        <br>
+       <b style="font-size: 20px;"> I am Who I Am!</b>
+       <p style="font-style: italic;">With Passion For Real, Good Food</p>
+        <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+    </p>
+    <hr>
+    </div></center>
+    <div id="foot">
+        
+           <h3> FOOTER</h3>
+           <pre>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+condimentum, porta lectus vitae, ultricies congue 
+gravida diam non fringilla.
+
+Powered by <a href="https://www.w3schools.com/w3css/default.asp">W3CSS</a>
+    </pre>
+    </div>
+    <div id="blog">
+        <h3>BLOG POSTS</h3>
+        <div id="back"><img src="https://www.w3schools.com/w3images/workshop.jpg" height="50px" height="50px"><span>Lorem
+             Sed mattis nunc</span></div><hr>
+            <div id="like"><img src="https://www.w3schools.com/w3images/gondol.jpg" height="50px" height="50px"><span>Ipsum
+                Praes tinci sed</span></div>
+                <h3 class="dum">POPULAR TAGS</h3>
+            <pre id="duck">                       <span class="t">Travel New York Dinner Salmon France Drinks 
+                       Ideas Flavors Cuisine Chicken Dressing Fried Fish
+                       Duck</span>
+
+              </pre>   
+    </div>
+    <button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+    
+   
+</body>
+</html>

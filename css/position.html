@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    
+      <style>
+        .scroll{
+            position: fixed;
+            width:100%;
+            height: 100%;
+            z-index: 4;  
+        }
+      
+    ul {
+      
+      list-style-type: none;
+      position: absolute;
+      right:0px;
+      margin: 10px;
+      padding: 10px;
+      display: block;   
+      
+
+    }
+    li  {
+     float: left;
+     margin-left: 40px;
+     position: relative;
+     right: 10px;
+     bottom: 10px;
+     font-size: 20px;
+     font-family: Verdana,sans-serif;
+     background-color:lightgreen;
+     padding-bottom: 10px;
+  
+     
+    }
+    a{
+text-decoration: none;
+color:black;
+letter-spacing: 3px;
+
+    }
+    div{
+letter-spacing: 3px;
+font-family: verdana,sans-serif;
+position: fixed;
+width: 100%;
+height: 100%;
+left: 10px;
+top: 0px;
+font-size: 20px;
+
+
+    }
+    #hi{
+        font-family: verdana,sans-serif;
+        font-size: 20px;
+        position: relative;
+        top: 15px;
+        left: 15px;
+        background-color:lightgreen;
+     padding-bottom: 10px;
+     
+     
+     
+
+     
+        
+
+    }
+    #img{
+        position:absolute;
+        top: 60px;
+        left: 0px;
+        
+    }
+    #dil{
+       position: absolute;
+       top: 300px;
+       left: 500px;
+font-size: 30px;
+
+    }
+    .arch{
+        color: white;
+        font-size: 40px;
+    }
+    .one{
+        color:white;
+        background: rgba(12, 12, 12,0.5 );
+        
+        font-size: 50px;
+    }
+    .rakesh{
+        position: relative;
+        top: 600px;
+        left: 20px;
+        font-size: 24px;
+        font-family: 'Segoe UI', Arial,  sans-serif;
+        font-weight: 400;
+        letter-spacing: 1px;
+        
+    }
+    .house{
+        position: absolute;
+        top: 720px;
+
+    }
+    .f{
+    position:absolute;
+    top: 0px;
+    color: white;
+    background-color: rgba(12, 12, 12, 0.9); 
+    margin-top:1px;
+    margin-bottom: 100px;
+padding-top: 10px;
+    padding-bottom: 10px;
+
+    }
+    .i{
+        position:absolute;
+    top: 0px;
+    left: 310px;
+    color: white;
+    background-color: rgba(12, 12, 12, 0.9); 
+    margin-top:1px;
+    margin-bottom: 100px;
+padding-top: 10px;
+    padding-bottom: 10px;
+    }
+    .j{
+        position:absolute;
+    top: 0px;
+    left: 620px;
+    color: white;
+    background-color: rgba(12, 12, 12, 0.9); 
+    margin-top:1px;
+    margin-bottom: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+    .k{
+        position:absolute;
+    top: 0px;
+    left: 930px;
+    color: white;
+    background-color: rgba(12, 12, 12, 0.9); 
+    margin-top:1px;
+    margin-bottom: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+    .l{
+        position:absolute;
+    top: 200px;
+    left: 0px;
+    color: white;
+    background-color: rgba(12, 12, 12, 0.9); 
+    margin-top:1px;
+    margin-bottom: 100px;
+padding-top: 10px;
+    padding-bottom: 10px;
+    }
+    .m{
+        position:absolute;
+    top: 200px;
+    left: 310px;
+    color: white;
+    background-color: rgba(12, 12, 12, 0.9); 
+    margin-top:1px;
+    margin-bottom: 100px;
+padding-top: 10px;
+    padding-bottom: 10px;
+
+    }
+    .n{
+        position:absolute;
+    top: 200px;
+    left: 620px;
+    color: white;
+    background-color: rgba(12, 12, 12, 0.9); 
+    margin-top:1px;
+    margin-bottom: 100px;
+padding-top: 10px;
+    padding-bottom: 10px;
+    }
+    .o{
+        position:absolute;
+    top: 200px;
+    left: 930px;
+    color: white;
+    background-color: rgba(12, 12, 12, 0.9); 
+    margin-top:1px;
+    margin-bottom: 100px;
+padding-top: 10px;
+    padding-bottom: 10px;
+
+    }
+    .p{
+position: relative;
+top: 1150px;
+left: 20px;
+font-size: 24px;
+ font-family: 'Segoe UI', Arial,  sans-serif;
+font-weight: 400;
+letter-spacing: 1px;
+
+
+    }
+    .q{
+        position: relative;
+top: 1150px;
+left: 20px;
+font-size: 15px;
+ font-family: verdana, sans-serif;
+font-weight: 400;
+line-height: 1.5;
+    }
+    #man{
+        position: absolute;
+        top: 1400px;
+    }
+    .r{
+        position: relative;
+top: 0px;
+left: 10px;
+font-size: 24px;
+ font-family: 'Segoe UI', Arial,  sans-serif;
+font-weight: 400;
+letter-spacing: 1px;
+
+    }
+    .two{
+
+        position: relative;
+top: 0px;
+left: 190px;
+font-size: 24px;
+ font-family: 'Segoe UI', Arial,  sans-serif;
+font-weight: 400;
+letter-spacing: 1px;
+
+
+    }
+    .three{
+
+position: relative;
+top: 0px;
+left: 390px;
+font-size: 24px;
+font-family: 'Segoe UI', Arial,  sans-serif;
+font-weight: 400;
+letter-spacing: 1px;
+
+
+}
+.four{
+
+position: relative;
+top: 0px;
+left: 575px;
+font-size: 24px;
+font-family: 'Segoe UI', Arial,  sans-serif;
+font-weight: 400;
+letter-spacing: 1px;
+}
+.five{
+    position:absolute;
+    bottom:50px;
+    left: 0px;
+    top: 260px;
+    color: white;
+    background-color: rgba(12, 12, 12, 0.9); 
+    margin-top:50px;
+    margin-bottom: 120px;
+padding-top: 10px;
+    padding-bottom: 10px;
+
+    
+
+}
+#map{
+position: absolute;
+top:450px;
+left: 0px;
+
+margin-bottom: 50px;
+
+
+}
+    
+   
+
+
+
+      </style>
+    
+</head>
+<body>
+    
+    <div class="scroll" >
+<a href="#br" id="hi"><b >BR</b>  Architect</a>
+
+
+    </div>
+    <div class="scroll">
+        <ul>
+            <a href="#Projects" ><li>Projects</li></a>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+           
+          </ul>
+          </div>
+          
+
+<div id="img">
+<img src="../img/architect.jpg"  height="500" width="1300">
+</div>
+
+<div id="dil">
+<b class="one">BR</b>
+<span class="arch">Architect</span>
+</div>
+</div>
+
+<span id="Projects" class="rakesh">Project</span>
+<hr>
+<div class="house">
+    <span class="f">Summer House</span>
+    <img src="../img/house5.jpg" height="200" width="300">
+    <img src="../img/house2.jpg" height="200" width="300">
+    <img src="../img/house3.jpg" height="200" width="300">
+    <img src="../img/house4.jpg" height="200" width="300">
+<span class="i">Brick House</span>
+<span class="j">Rnovated House</span>
+<span class="k">Barn House</span>
+<img src="../img/house2 (1).jpg" height="200" width="300">
+<img src="../img/house5 (1).jpg" height="200" width="300">
+<img src="../img/house4 (1).jpg" height="200" width="300">
+<img src="../img/house3 (1).jpg" height="200" width="300">
+<span class="l">Summer House</span>
+<span class="m">Brick House</span>
+<span class="n">Rnovated House</span>
+<span class="o">Barn House</span>
+
+</div>
+<span id="About" class="p">About</span>
+<hr>
+<p class="q">
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</p>
+<div id="man">
+    <img src="../img/team2.jpg" height="200" width="300">
+    <img src="../img/team1.jpg" height="200" width="300">
+    <img src="../img/team3.jpg" height="200" width="300">
+    <img src="../img/team4.jpg" height="200" width="300">
+    <span class="r">John Deo</span>
+    <span class="two">Jane Deo</span>
+    <span class="three">Mike Ross</span>
+    <span class="four">Dan Star</span>
+
+    <span class="five">Send Message</span>
+    
+    <img src="../img/map (1).jpg" id="map" width="100%" height="auto">
+
+
+
+
+
+</div>
+
+
+
+    
+   
+</body>
+</html>
